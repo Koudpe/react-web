@@ -1,0 +1,36 @@
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link-wrap{
+    padding: 0 15px;
+}
+
+.nav-link-wrap .nav-link{
+    color: none;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: .2s linear;
+}
+
+.nav-link-wrap .nav-link:hover{
+    color: red;
+    transition: .2s linear;
+}
+
+.nav-link-wrap .nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: .3s linear;
+    bottom: 0;
+}
+
+.nav-link-wrap .nav-link:hover::before{
+    width: 100%;
+    transition: .3s linear;
+}
