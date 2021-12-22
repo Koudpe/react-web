@@ -1,0 +1,45 @@
+.weather {
+  width: 350px;
+  height: 500px;
+  background-image: url(../assets/cold.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 25px 5px rgb(154, 250, 255);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.warm {
+  background-image: url(../assets/warm.png);
+  box-shadow: 0 0 25px 5px rgb(255, 109, 11);
+  color: black;
+}
+
+.page-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.weather--large {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.weather--medium {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.weather--small {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}

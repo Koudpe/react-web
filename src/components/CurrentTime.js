@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const CurrentTime = () => {
-  const [currTime, setCurrTime] = useState ({
+  const [currTime, setCurrTime] = useState({
     date: new Date(),
   });
 
@@ -13,7 +13,7 @@ const CurrentTime = () => {
 
   return (
     <div>
-      <p className="timer">{currTime.date.toLocaleTimeString()}</p>
+      <p className='timer'>{currTime.date.toLocaleTimeString()}</p>
       {callMe()}
     </div>
   );

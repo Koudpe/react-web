@@ -12,11 +12,11 @@ const NewNote = ({ handleAddNote }) => {
   };
 
   const handleSaveClick = () => {
-    if(noteText.trim().length > 0){
+    if (noteText.trim().length > 0) {
       handleAddNote(noteText);
       setNoteText("");
     }
-  }
+  };
 
   return (
     <div className='note-card-wrap'>
@@ -25,8 +25,8 @@ const NewNote = ({ handleAddNote }) => {
           <div className='note-card-text'>
             <textarea
               type='text'
-              rows="8"
-              cols="10"
+              rows='8'
+              cols='10'
               placeholder='New note...'
               value={noteText}
               onChange={handleChange}
@@ -34,7 +34,9 @@ const NewNote = ({ handleAddNote }) => {
           </div>
           <div className='note-card-footer'>
             <p>Remaining: {characterLimit - noteText.length}</p>
-            <button className='button--add' onClick={handleSaveClick}>ADD</button>
+            <button className='button--add' onClick={handleSaveClick}>
+              ADD
+            </button>
           </div>
         </div>
       </div>

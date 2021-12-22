@@ -1,6 +1,6 @@
 import React from "react";
 
-const SingleNote = ({text, date, id, handleDeleteNote}) => {
+const SingleNote = ({ text, date, id, handleDeleteNote }) => {
   return (
     <div className='note-card-wrap'>
       <div className='note-card'>
@@ -10,7 +10,12 @@ const SingleNote = ({text, date, id, handleDeleteNote}) => {
           </div>
           <div className='note-card-footer'>
             <p>{date}</p>
-            <button className='button--remove' onClick={() => handleDeleteNote(id)}>X</button>
+            <button
+              className='button--remove'
+              onClick={() => handleDeleteNote(id)}
+            >
+              X
+            </button>
           </div>
         </div>
       </div>

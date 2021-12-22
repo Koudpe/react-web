@@ -7,6 +7,8 @@ import { nanoid } from "nanoid";
 const Note = () => {
   const [notes, setNotes] = useState([]);
 
+  const [search, setSearch] = useState("");
+
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem("notes-data"));
     if (savedNotes) {
@@ -36,9 +38,11 @@ const Note = () => {
 
   return (
     <div>
-      <Search />
+      <Search setSearch={setSearch} />
       <NoteList
-        notes={notes}
+        notes={notes.filter((note) =>
+          note.text.toLocaleLowerCase().includes(search)
+        )}
         handleAddNote={addNote}
         handleDeleteNote={deleteNote}
       />

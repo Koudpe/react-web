@@ -1,10 +1,21 @@
 import React from "react";
-import "./css/Home.css"
+import Weather from "./Weather";
+import Note from "./Note";
+import Todo from "./Todo";
+import "./css/Home.css";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className='container'>
+      <div className='page-full'>
+        <div className='page-half'>
+          <Weather />
+        </div>
+        <div className='page-half'>
+          <Todo />
+        </div>
+      </div>
+      <Note />
     </div>
   );
 };
