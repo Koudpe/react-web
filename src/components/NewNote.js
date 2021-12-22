@@ -33,7 +33,6 @@ const NewNote = ({ handleAddNote }) => {
             />
           </div>
           <div className='note-card-footer'>
-            <p>Date</p>
             <p>Remaining: {characterLimit - noteText.length}</p>
             <button className='button--add' onClick={handleSaveClick}>ADD</button>
           </div>

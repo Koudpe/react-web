@@ -12,6 +12,9 @@ const Modal = () => {
           <p className='modal-text'>Login</p>
           <Input type='text' placeholder='Username' />
           <Input type='password' placeholder='Password' />
+          <div className="button-wrap">
+            <button className="button--login">OK</button>
+          </div>
         </div>
       </div>
     </div>

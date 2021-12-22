@@ -16,7 +16,7 @@ const Nav = () => {
       <div className='nav-link-wrap'>
         <Link className="nav-link" to='/Timer'>Timer</Link>
       </div>
-      <Modal/>
+      {/* <Modal/> */}
     </div>
   );
 };

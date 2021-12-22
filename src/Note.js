@@ -33,6 +33,7 @@ const Note = () => {
     const newNotes = notes.filter((note) => note.id !== id);
     setNotes(newNotes);
   };
+
   return (
     <div>
       <Search />
